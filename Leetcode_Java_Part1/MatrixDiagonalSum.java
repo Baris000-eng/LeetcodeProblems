@@ -1,28 +1,23 @@
 class Solution {
-    public boolean checkXMatrix(int[][] grid) {
-        boolean checkX = true;
-        for(int i = 0 ; i < grid.length; i++) {
-            for(int j = 0; j < grid.length; j++) {
-                if(i==j && grid[i][j]==0) {
-                    checkX = false;
-                } else if(i+j==grid.length-1 && grid[i][j]==0) {
-                     checkX = false;
-                } else if(i!=j&&i+j!=grid.length-1&&grid[i][j]!=0) {
-                     checkX = false;
-                }
+    public int diagonalSum(int[][] mat) {
+        int len = mat.length;
+        int i = 0, j = 0;
+        int diagonalSum = 0;
+        for(i = 0 ; i < len; i++) {
+                for(j = 0; j < len; j++) {
+                    if(i==j||(i!=j&&i+j==len-1)) {
+                        diagonalSum+=mat[i][j];
+                    } 
             }
         }
-        
-        
-        return checkX;
+        return diagonalSum;
+      
     }
 }
 
 
-/*A square matrix is said to be an X-Matrix if both of the following conditions hold:
+/*Given a square matrix mat, return the sum of the matrix diagonals.
 
-All the elements in the diagonals of the matrix are non-zero.
-All other elements are 0.
-Given a 2D integer array grid of size n x n representing a square matrix, return true if grid is an X-Matrix. Otherwise, return false.*/
+Only include the sum of all the elements on the primary diagonal and all the elements on the secondary diagonal that are not part of the primary diagonal.*/
 
 
