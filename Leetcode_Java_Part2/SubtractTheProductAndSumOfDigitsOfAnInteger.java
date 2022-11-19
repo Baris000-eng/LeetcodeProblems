@@ -10,6 +10,9 @@ class Solution {
         }
         
         int difference = product - sum;
+        if(difference <= 0) {
+            difference = -1 * difference;
+        }
         return difference;
     }
 }
