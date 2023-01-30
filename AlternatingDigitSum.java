@@ -3,7 +3,7 @@ class Solution {
         String str = String.valueOf(n);
         int digitSum = 0;
         while(n > 0) {
-            str = String.valueOf(n); // update to new string after to alternate signs of digits.
+            str = String.valueOf(n); // update to new string to alternate signs of digits.
             int remainder = n % 10;
             if(str.length() % 2 == 1) {
                 digitSum = digitSum + remainder;
