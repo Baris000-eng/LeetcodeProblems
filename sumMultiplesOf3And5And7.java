@@ -14,3 +14,13 @@ class Solution {
         return sumMultiplesOf3And5And7;
     }
 }
+
+
+
+
+
+
+
+
+
+
