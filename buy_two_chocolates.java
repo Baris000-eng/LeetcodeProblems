@@ -1,4 +1,3 @@
-
 /* You are given an integer array of prices representing the prices of various chocolates in a store. 
 You are also given a single integer of money, which represents your initial amount of money.
 You must buy exactly two chocolates in such a way that you still have some non-negative leftover money. 
