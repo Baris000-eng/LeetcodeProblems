@@ -1,4 +1,4 @@
-Initially, you have a bank account balance of 100 dollars.
+/*Initially, you have a bank account balance of 100 dollars.
 
 /*You are given an integer purchaseAmount representing the amount you will spend on a purchase in dollars.
 
